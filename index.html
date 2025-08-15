@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Blog</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="#">My Blog</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#articles">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero-section text-light text-center d-flex align-items-center"
+    >
+      <div class="container">
+        <h1 class="fw-bold display-4">Inspiring Ideas for Developers</h1>
+        <p class="lead">
+          Your daily source of web development tips, UI/UX design trends, and
+          coding tutorials.
+        </p>
+        <a href="#articles" class="btn btn-primary btn-lg me-2"
+          >Explore Articles</a
+        >
+        <a href="#newsletter" class="btn btn-outline-light btn-lg">Subscribe</a>
+      </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="assets/Card1.png"
+              class="img-fluid rounded shadow"
+              alt="Featured Article"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2 class="fw-bold">The Future of Web Development</h2>
+            <p>
+              Discover the latest trends shaping the future of web technologies
+              — from AI-driven development to Web3 innovations and immersive
+              design experiences.
+            </p>
+            <a href="#" class="btn btn-gradient">Read Full Article</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Cards -->
+    <section id="articles" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Latest Articles</h2>
+        <div class="row g-4">
+          <!-- Repeatable Blog Card -->
+          <div class="col-md-4">
+            <div class="card blog-card h-100">
+              <img
+                src="assets/Card2.png"
+                class="card-img-top"
+                alt="Bootstrap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mastering Bootstrap 5</h5>
+                <p class="card-text">
+                  Learn to create beautiful, responsive websites quickly using
+                  Bootstrap’s powerful grid system and components.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards here -->
+          <div class="col-md-4">
+            <div class="card blog-card h-100">
+              <img src="assets/Card3.png" class="card-img-top" alt="React" />
+              <div class="card-body">
+                <h5 class="card-title">Getting Started with React</h5>
+                <p class="card-text">
+                  An introduction to React.js, a powerful library for building
+                  modern, interactive user interfaces.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card blog-card h-100">
+              <img src="assets/Card4.jpeg" class="card-img-top" alt="Python" />
+              <div class="card-body">
+                <h5 class="card-title">The Power of Python</h5>
+                <p class="card-text">
+                  Why Python remains one of the most versatile and in-demand
+                  programming languages today.
+                </p>
+                <a href="#" class="btn btn-outline-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-5">What Our Readers Say</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="testimonial p-4 shadow-sm rounded">
+              <p>
+                "This blog has helped me level up my coding skills and stay
+                updated with trends!"
+              </p>
+              <h6>- Alex Johnson</h6>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial p-4 shadow-sm rounded">
+              <p>
+                "Clean, informative, and inspiring content every week. Highly
+                recommended!"
+              </p>
+              <h6>- Sarah Lee</h6>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial p-4 shadow-sm rounded">
+              <p>
+                "I always look forward to reading new articles here. Great
+                work!"
+              </p>
+              <h6>- Mark Wilson</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="newsletter py-5 text-center text-light">
+      <div class="container">
+        <h2 class="fw-bold">Stay Updated!</h2>
+        <p>
+          Subscribe to our newsletter for the latest blog posts and tutorials.
+        </p>
+        <form class="d-flex justify-content-center mt-3">
+          <input
+            type="email"
+            class="form-control w-50"
+            placeholder="Enter your email"
+          />
+          <button type="submit" class="btn btn-primary ms-2">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer-section py-5 bg-dark text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>About</h5>
+            <p>
+              We share quality content for developers, designers, and tech
+              enthusiasts around the globe.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">Home</a></li>
+              <li><a href="#" class="footer-link">Articles</a></li>
+              <li><a href="#" class="footer-link">About</a></li>
+              <li><a href="#" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact</h5>
+            <p>Email: contact@myblog.com</p>
+            <p>Phone: +1 234 567 890</p>
+            <div>
+              <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <p class="mt-4 mb-0 text-center">
+          &copy; 2025 My Blog. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".navbar-nav .nav-link").forEach((link) => {
+        link.addEventListener("click", function () {
+          // Remove active from all links
+          document
+            .querySelectorAll(".navbar-nav .nav-link")
+            .forEach((nav) => nav.classList.remove("active"));
+          // Add active to clicked link
+          this.classList.add("active");
+        });
+      });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
